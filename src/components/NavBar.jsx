@@ -61,7 +61,7 @@ const NavBarStyle = styled.div`
     padding: 0;
 
     .hide-items {
-      display: none;
+      transform: translateY(calc(-100% - 1rem));
     }
 
     .open-menu-icon {
@@ -69,8 +69,7 @@ const NavBarStyle = styled.div`
     }
 
     .nav-items {
-      --top: 1 rem;
-      transition: 0.3s ease transform;
+      transition: 0.5s ease transform;
       background-color: var(--deep-dark);
       padding: 2rem;
       width: 90%;
@@ -78,7 +77,7 @@ const NavBarStyle = styled.div`
       border-radius: 12px;
       position: absolute;
       right: 1rem;
-      top: var(--top);
+      top: 1rem;
 
       .close-menu-icon {
         display: block;

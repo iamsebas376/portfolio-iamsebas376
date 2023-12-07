@@ -1,46 +1,51 @@
 
 import { v4 as uuidv4 } from 'uuid';
-import ProjectImg from '../images/projectImg.png';
-import UTrackerImg from '../images/utracker.jpg';
-import GreenCtgImg from '../images/greenctg.jpg';
-import CoinTrackerImg from '../images/cointracker.jpg';
-import CavinImg from '../images/cavinimg.jpg';
+import GameCatalogue from '../images/game-catalogue.png';
+import ToDoList from '../images/to-do-list.png';
+import Pokedex from '../images/pokedex.png';
+import BmoCalculadora from '../images/bmo-calculadora.png';
+import TheWitcher from '../images/pagina-tributo-the-witcher-3.png';
 
 const projects = [
     {
         id: uuidv4(),
-        name: 'U Tracker',
+        name: 'Game Catalogue',
         desc:
-            'An application to track your all data from one place. I developed the website and the mobile app',
-        img: UTrackerImg,
+            'Game Catalogue es una aplicación web desarrollada en React que permite a los usuarios explorar y descubrir juegos. Proporciona una interfaz interactiva para buscar juegos por género, realizar búsquedas específicas y obtener información detallada sobre cada juego.',
+        link: 'https://game-catalogue-iamsebas376.netlify.app/',
+        img: GameCatalogue,
     },
     {
         id: uuidv4(),
-        name: 'Green CTG',
+        name: 'To do List',
         desc:
-            'An app to help people to get an overview of how they can make the city beautiful.',
-        img: GreenCtgImg,
+            'Este proyecto es una aplicación de To-Do List desarrollada con React. La aplicación permite a los usuarios agregar, eliminar y marcar como completadas las tareas de su lista.',
+        link: 'https://to-do-list-react-iamsebas376.netlify.app/',
+        img: ToDoList,
     },
     {
         id: uuidv4(),
-        name: 'Coin Tracker',
+        name: 'Pokedex',
         desc:
-            'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
-        img: CoinTrackerImg,
+            'Una Pokedex es una herramienta esencial para cualquier entrenador Pokémon que quiera conocer información sobre diferentes tipos de Pokémon. Este proyecto es una Pokedex web desarrollada por Iamsebas376, que te permite explorar y aprender sobre los Pokémon.',
+        link: 'https://iamsebas376.github.io/pokedex/',
+        img: Pokedex,
     },
     {
         id: uuidv4(),
-        name: "Cavin's Portfolio",
+        name: "BMO Calcuadora",
         desc:
-            'A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.',
-        img: CavinImg,
+            'Esta es una calculadora web inspirada en BMO, el adorable personaje de la serie de dibujos animados "Hora de Aventura". La calculadora tiene una función de cambio entre el modo día y el modo noche, lo que la hace aún más especial. ¡Diviértete haciendo cálculos con un toque de aventura!',
+        link: 'https://iamsebas376.github.io/bmo-calculadora/',
+        img: BmoCalculadora,
     },
     {
         id: uuidv4(),
-        name: 'Tracking Soft',
+        name: 'Página tributo The Witcher',
         desc:
-            'A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.',
-        img: ProjectImg,
+            'Este proyecto es una página web tributo a The Witcher 3. La página ofrece información detallada sobre la historia, personajes y el mundo del juego.',
+        link: 'https://iamsebas376.github.io/pagina-tributo-the-witcher-3/',
+        img: TheWitcher,
     },
 ];
 

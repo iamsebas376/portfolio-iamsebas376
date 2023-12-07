@@ -2,7 +2,6 @@ import React from "react";
 import Section1 from "../assets/images/home-section1.jpg";
 import SocialMediaArrow from "../assets/images/social-media-arrow.svg";
 import ScrollDown from "../assets/images/scroll-down-arrow.svg";
-import PText from "./PText";
 import Button from "./Button";
 import styled from "styled-components";
 
@@ -21,7 +20,7 @@ const HomeSection1Styles = styled.div`
 
   .section1-heading {
     font-size: 2rem;
-    margin-bottom: -4rem;
+    margin-bottom: -6rem;
     position: relative;
     span {
       display: inline-block;
@@ -29,7 +28,13 @@ const HomeSection1Styles = styled.div`
     }
   }
   .section1-name {
-    font-size: 7rem;
+    font-size: 5rem;
+    font-family: "Montserrat SemiBold";
+    color: var(--white);
+  }
+
+  .section1-subtitle {
+    font-size: 3rem;
     font-family: "Montserrat SemiBold";
     color: var(--white);
   }
@@ -40,10 +45,14 @@ const HomeSection1Styles = styled.div`
     height: 600px;
     margin: 0 auto;
     border: 2px solid var(--gray-1);
+    border-radius: 8px;
+    img {
+      border-radius: 6px;
+    }
   }
 
   .section1-info {
-    margin-top: -25rem;
+    margin-top: -4rem;
   }
 
   .section1-social,
@@ -58,12 +67,12 @@ const HomeSection1Styles = styled.div`
 
   .section1-social {
     left: 50px;
-    bottom: 26%;
+    bottom: 32%;
   }
 
   .section1-scrollDown {
     right: 50px;
-    bottom: 33%;
+    bottom: 39%;
   }
 
   .section1-social-indicator,
@@ -71,7 +80,7 @@ const HomeSection1Styles = styled.div`
     width: 50px;
     p {
       font-size: 1.6rem;
-      transform: translateY(-70px) rotate(90deg);
+      transform: translateY(-50px) rotate(-90deg);
       letter-spacing: normal.7rem;
       text-transform: uppercase;
     }
@@ -96,7 +105,7 @@ const HomeSection1Styles = styled.div`
         a {
           display: inline-block;
           font-size: 1.6rem;
-          transform: rotate(90deg);
+          transform: rotate(-90deg);
           letter-spacing: 5px;
           margin-bottom: 2rem;
         }
@@ -123,12 +132,12 @@ const HomeSection1Styles = styled.div`
     }
 
     .section1-info {
-      margin-top: 3rem;
+      margin-top: -4rem;
     }
 
     .section1-social {
       left: 0;
-      bottom: 42%;
+      bottom: 31%;
       width: 20px;
 
       .section1-social-indicator {
@@ -155,12 +164,17 @@ const HomeSection1Styles = styled.div`
 
     .section1-scrollDown {
       right: 0;
-      bottom: 46%;
+      bottom: 37%;
       width: 20px;
       gap: 1rem;
       p {
         font-size: 1.2rem;
       }
+    }
+  }
+  @media only screen and (max-width: 375px) {
+    .section1-image {
+      width: 280px;
     }
   }
 `;
@@ -178,13 +192,9 @@ function HomeSection1() {
             <img src={Section1} alt="img-section1" />
           </div>
           <div className="section1-info">
-            <PText>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
-              voluptates repellendus sequi cumque quas laboriosam debitis beatae
-              porro tenetur, a sit commodi saepe voluptatum, perferendis odio
-              doloremque maiores consectetur repellat.
-            </PText>
-            <Button btnLink="/proyectos" btnText="Mira mis proyectos" />
+            <h2 className="section1-subtitle">
+              Desarrollador <br /> web Frontend
+            </h2>
           </div>
           <div className="section1-social">
             <div className="section1-social-indicator">

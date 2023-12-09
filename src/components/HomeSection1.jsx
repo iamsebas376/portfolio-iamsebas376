@@ -8,7 +8,7 @@ import styled from "styled-components";
 
 const HomeSection1Styles = styled.div`
   .section1 {
-    margin-top: -10rem;
+    margin-top: -8rem;
     height: 100vh;
     min-height: 1000px;
     width: 100%;
@@ -35,7 +35,8 @@ const HomeSection1Styles = styled.div`
   }
 
   .section1-subtitle {
-    font-size: 3rem;
+    margin-top: -6.5rem;
+    font-size: 5rem;
     font-family: "Montserrat SemiBold";
     color: var(--white);
   }
@@ -115,6 +116,10 @@ const HomeSection1Styles = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
+    .section1-subtitle {
+      font-size: 3rem;
+      margin-top: 0;
+    }
     .section1 {
       min-height: 750px;
       margin-top: -5rem;
@@ -122,7 +127,7 @@ const HomeSection1Styles = styled.div`
 
     .section1-heading {
       font-size: 1.5rem;
-      margin-bottom: -3rem;
+      margin-bottom: -5rem;
       .section1-name {
         font-size: 4.5rem;
       }
@@ -138,7 +143,7 @@ const HomeSection1Styles = styled.div`
 
     .section1-social {
       left: 0;
-      bottom: 31%;
+      bottom: 33%;
       width: 20px;
 
       .section1-social-indicator {
@@ -165,7 +170,7 @@ const HomeSection1Styles = styled.div`
 
     .section1-scrollDown {
       right: 0;
-      bottom: 37%;
+      bottom: 38%;
       width: 20px;
       gap: 1rem;
       p {
@@ -187,7 +192,7 @@ function HomeSection1() {
         <div className="container">
           <h1 className="section1-heading">
             <span>Hola, soy</span>
-            <span className="section1-name">Sebas</span>
+            <span className="section1-name">Sebastián</span>
           </h1>
           <div className="section1-image">
             <img src={Section1} alt="img-section1" />
@@ -198,7 +203,8 @@ function HomeSection1() {
             </PText>
             <Button btnText="see my works" btnLink="/projects" /> */}
             <h2 className="section1-subtitle">
-              Desarrollador <br /> web Frontend
+              Desarrollador <br />
+              Frontend
             </h2>
           </div>
           <div className="section1-social">

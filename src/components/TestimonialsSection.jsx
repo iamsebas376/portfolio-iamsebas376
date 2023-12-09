@@ -115,7 +115,7 @@ function TestimonialsSection() {
             <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
               <div className="testimonal-info">
                 <div className="testimonial-desc">
-                  <Ptext className="para">{activeSlide.desc}</Ptext>
+                  <Ptext>{activeSlide.desc}</Ptext>
                 </div>
                 <h2 className="testimonial-name">{activeSlide.name}</h2>
                 <p className="testimonial-title">{activeSlide.title}</p>

@@ -3,8 +3,8 @@ import { CSSTransition, SwitchTransition } from "react-transition-group";
 import { GrPrevious, GrNext } from "react-icons/gr";
 import styled from "styled-components";
 import SectionTitle from "./SectionTitle";
-import Ptext from "./Ptext";
 import testimonials from "../assets/data/testimonials";
+import PText from "./PText";
 
 const TestimonialStyles = styled.div`
   padding: 1rem 0;
@@ -115,7 +115,7 @@ function TestimonialsSection() {
             <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
               <div className="testimonal-info">
                 <div className="testimonial-desc">
-                  <Ptext>{activeSlide.desc}</Ptext>
+                  <PText>{activeSlide.desc}</PText>
                 </div>
                 <h2 className="testimonial-name">{activeSlide.name}</h2>
                 <p className="testimonial-title">{activeSlide.title}</p>

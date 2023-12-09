@@ -8,6 +8,7 @@ const SectionTitleStyle = styled.div`
     font-size: 2rem;
   }
   h2 {
+    color: var(--white);
     font-size: "Montserrat Bold";
     font-size: 6rem;
     margin-top: 0.5rem;

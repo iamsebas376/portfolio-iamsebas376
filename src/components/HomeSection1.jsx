@@ -2,6 +2,7 @@ import React from "react";
 import Section1 from "../assets/images/home-section1.jpg";
 import SocialMediaArrow from "../assets/images/social-media-arrow.svg";
 import ScrollDown from "../assets/images/scroll-down-arrow.svg";
+import PText from "./PText";
 import Button from "./Button";
 import styled from "styled-components";
 
@@ -192,6 +193,10 @@ function HomeSection1() {
             <img src={Section1} alt="img-section1" />
           </div>
           <div className="section1-info">
+            {/* <PText>
+              lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </PText>
+            <Button btnText="see my works" btnLink="/projects" /> */}
             <h2 className="section1-subtitle">
               Desarrollador <br /> web Frontend
             </h2>

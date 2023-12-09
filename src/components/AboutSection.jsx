@@ -53,6 +53,9 @@ const AboutSectionStyles = styled.div`
     }
   }
   @media only screen and (max-width: 768px) {
+    .section-title {
+      margin-bottom: 2rem;
+    }
     .container {
       flex-direction: column;
       text-align: center;
@@ -62,7 +65,7 @@ const AboutSectionStyles = styled.div`
       width: 100%;
     }
     .about-img {
-      max-height: 500px;
+      max-height: 400px;
     }
     .section-title {
       text-align: center;
@@ -92,7 +95,11 @@ function AboutSection() {
     <AboutSectionStyles>
       <div className="container">
         <div className="about-section-left">
-          <SectionTitle subHeading="Permíteme presentarme" heading="Sobre mi" />
+          <SectionTitle
+            subHeading="Un poco"
+            heading="Sobre mi"
+            className="section-title"
+          />
           <Ptex>
             Desarrollador Frontend con formación de Soporte TI de Google, y
             actualmente cursando la carrera de ingeniería informática en el

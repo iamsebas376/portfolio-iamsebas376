@@ -101,9 +101,9 @@ function AboutSection() {
             className="section-title"
           />
           <Ptex>
-            Desarrollador Frontend con formación de Soporte TI de Google, y
-            actualmente cursando la carrera de ingeniería informática en el
-            Politécnico Colombiano Jaime Isaza Cadavid.
+            Soy un desarrollador Frontend con formación de Soporte TI de Google,
+            y actualmente estoy cursando la carrera de ingeniería informática en
+            el Politécnico Colombiano Jaime Isaza Cadavid.
           </Ptex>
           <div className="about-section-buttons">
             <Button btnLink="/proyectos" btnText="Mira mis proyectos" />

@@ -7,6 +7,7 @@ import testimonials from "../assets/data/testimonials";
 import PText from "./PText";
 
 const TestimonialStyles = styled.div`
+  overflow-x: hidden;
   padding: 1rem 0;
   text-align: center;
   .testimonal-wrapper {
@@ -123,7 +124,7 @@ function TestimonialsSection() {
             </CSSTransition>
           </SwitchTransition>
         </div>
-        <dic className="arrows">
+        <div className="arrows">
           <div
             className="prev"
             onClick={handlePrev}
@@ -142,7 +143,7 @@ function TestimonialsSection() {
           >
             <GrNext />
           </div>
-        </dic>
+        </div>
       </div>
     </TestimonialStyles>
   );

@@ -1,27 +1,27 @@
 const testimonials = [
     {
         id: 1,
-        name: 'Shaif Arfan',
-        title: 'CEO',
-        org: 'WEB CIFAR',
+        name: 'Camilo Alzate',
+        title: 'Desarrollador Backend',
         desc:
-            'Ayan is a person of commitment. He is really good at what he is doing. I really like his work. Especially the unique point of view of designing.',
+            'Lorem ipsum dolor sit amet consectetur adipiscing, elit interdum eros cubilia turpis ad sed, dui justo rutrum magnis elementum. ',
     },
     {
         id: 2,
-        name: 'Fahim Elahe',
-        title: 'Co-founder',
-        org: 'Kreetive',
+        name: 'Juan Pavas',
+        title: 'Desarrollador Full Stack',
         desc:
-            'Really amazing communication skills. Always understand what I am trying to achieve. Also, his work is really amazing. Do really high-quality work.',
+            'Lorem ipsum dolor sit amet consectetur adipiscing, elit interdum eros cubilia turpis ad sed, dui justo rutrum magnis elementum. ',
+
     },
     {
         id: 3,
-        name: 'Sayed',
-        title: 'Marketing Head',
-        org: 'Eleven Dawn',
+        name: 'Camilo Zuluaga',
+        title: 'Desarrollador RPA',
         desc:
-            'Really hard-working person. Deliver the work as promised. Planning to work more with this person.',
+            'Lorem ipsum dolor sit amet consectetur adipiscing, elit interdum eros cubilia turpis ad sed, dui justo rutrum magnis elementum. ',
+
     },
+
 ];
 export default testimonials;

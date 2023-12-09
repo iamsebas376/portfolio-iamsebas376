@@ -27,7 +27,7 @@ const projects = [
         id: uuidv4(),
         title: 'Pokedex',
         desc:
-            'La Pokedex: una herramienta clave para entrenadores Pokémon. Esta Pokedex web, creada por Iamsebas376, te permite explorar y aprender sobre los diferentes tipos de Pokémon.',
+            'La Pokedex: una herramienta clave para entrenadores Pokémon. Esta Pokedex web te permite explorar y aprender sobre los diferentes tipos de Pokémon.',
         link: 'https://iamsebas376.github.io/pokedex/',
         img: Pokedex,
     },

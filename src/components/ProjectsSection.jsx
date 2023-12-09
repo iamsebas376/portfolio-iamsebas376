@@ -17,10 +17,12 @@ const ProjectSectionStyle = styled.div`
     gap: 3rem;
     margin-top: 1rem;
   }
+
   .swiper {
     padding-top: 8rem;
     max-width: 100%;
   }
+
   .swiper-button-prev,
   .swiper-button-next {
     position: absolute;
@@ -35,13 +37,16 @@ const ProjectSectionStyle = styled.div`
     color: var(--gray-1);
     border-radius: 8px;
   }
+
   .swiper-button-next {
     right: 0;
   }
+
   .swiper-button-prev::after,
   .swiper-button-next::after {
     font-size: 2rem;
   }
+
   @media only screen and (max-width: 768px) {
     .projects-all-items {
       flex-direction: column;
@@ -55,6 +60,7 @@ const ProjectSectionStyle = styled.div`
     }
   }
 `;
+
 function ProjectsSection() {
   return (
     <ProjectSectionStyle>

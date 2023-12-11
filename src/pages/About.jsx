@@ -4,7 +4,6 @@ import Button from "../components/Button";
 import AboutImg from "../assets/images/about-me.jpg";
 import styled from "styled-components";
 import AboutInfoItem from "../components/AboutInfoItem";
-import ContactBanner from "../components/ContactBanner";
 
 const AboutPageStyles = styled.div`
   padding: 10rem 0 10rem 0;
@@ -40,6 +39,17 @@ const AboutPageStyles = styled.div`
       max-width: 100%;
     }
   }
+  .btn-cv {
+    font-size: 2.2rem;
+    background-color: var(--gray-1);
+    padding: 0.7rem 2rem;
+    border-radius: 8px;
+    display: inline-block;
+    border: 2px solid var(--gray-1);
+    a {
+      color: black;
+    }
+  }
   .right {
     img {
       border: 2px solid var(--gray-1);
@@ -58,6 +68,9 @@ const AboutPageStyles = styled.div`
   }
   @media only screen and (max-width: 768px) {
     padding: 10rem 0;
+    .btn-cv {
+      font-size: 1.8rem;
+    }
     .about-info-items {
       margin-top: 5rem;
       margin-bottom: -10rem;
@@ -78,7 +91,7 @@ const AboutPageStyles = styled.div`
   }
 `;
 
-export default function About() {
+function About() {
   return (
     <>
       <AboutPageStyles>
@@ -111,7 +124,14 @@ export default function About() {
                   manteniéndome actualizado en un campo en constante evolución.
                 </PText>
               </div>
-              <Button btnText="Descargar CV" btnLink="#" />
+              <button className="btn-cv">
+                <a
+                  href="https://drive.google.com/file/d/1w5WRtioe3AQedJZVdWqqAPFh0wxTuqra/view?usp=sharing"
+                  target="_blank"
+                >
+                  Descargar CV
+                </a>
+              </button>
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />
@@ -160,3 +180,5 @@ export default function About() {
     </>
   );
 }
+
+export default About;

@@ -46,9 +46,11 @@ const ProjectItemStyle = styled.div`
 function ProjectItem({ img, title, desc, link }) {
   return (
     <ProjectItemStyle>
-      <Link to={link} target="_blank" className="project-item-img">
-        <img src={img} alt="project img" />
-      </Link>
+      <a href={link} target="_blank">
+        <div className="project-item-img">
+          <img src={img} alt="project img" />
+        </div>
+      </a>
       <div className="project-item-info">
         <h3 className="project-item-title">{title}</h3>
         <p className="project-item-desc">{desc}</p>

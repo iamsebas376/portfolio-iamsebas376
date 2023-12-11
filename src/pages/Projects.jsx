@@ -73,7 +73,7 @@ function Projects() {
       <div className="container">
         <SectionTitle heading="Proyectos" subHeading="Algunos de mis" />
         <div className="projects-search-bar">
-          <form>
+          <form onSubmit={(e) => e.preventDefault()}>
             <input
               type="text"
               value={searchText}

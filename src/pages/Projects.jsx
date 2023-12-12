@@ -90,6 +90,7 @@ function Projects() {
               title={item.title}
               desc={item.desc}
               img={item.img}
+              link={item.link}
             />
           ))}
         </div>

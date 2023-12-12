@@ -2,13 +2,11 @@ import React from "react";
 import Section1 from "../assets/images/home-section1.jpg";
 import SocialMediaArrow from "../assets/images/social-media-arrow.svg";
 import ScrollDown from "../assets/images/scroll-down-arrow.svg";
-import PText from "./PText";
-import Button from "./Button";
 import styled from "styled-components";
 
 const HomeSection1Styles = styled.div`
   .section1 {
-    margin-top: -8rem;
+    margin-top: -10rem;
     height: 100vh;
     min-height: 1000px;
     width: 100%;
@@ -35,7 +33,7 @@ const HomeSection1Styles = styled.div`
   }
 
   .section1-subtitle {
-    margin-top: -6.5rem;
+    margin-top: 4rem;
     font-size: 5rem;
     font-family: "Montserrat SemiBold";
     color: var(--white);
@@ -44,7 +42,7 @@ const HomeSection1Styles = styled.div`
   .section1-image {
     max-width: 900px;
     width: 100%;
-    height: 600px;
+    height: 500px;
     margin: 0 auto;
     border: 2px solid var(--gray-1);
     border-radius: 8px;
@@ -69,12 +67,12 @@ const HomeSection1Styles = styled.div`
 
   .section1-social {
     left: 50px;
-    bottom: 32%;
+    bottom: 37%;
   }
 
   .section1-scrollDown {
     right: 50px;
-    bottom: 39%;
+    bottom: 45%;
   }
 
   .section1-social-indicator,
@@ -114,15 +112,20 @@ const HomeSection1Styles = styled.div`
       }
     }
   }
+  @media (min-width: 1540px) and (max-width: 2560px) {
+    .section1 {
+      margin-top: 2rem;
+    }
+  }
 
   @media only screen and (max-width: 768px) {
     .section1-subtitle {
       font-size: 3rem;
-      margin-top: 0;
+      margin-top: 5rem;
     }
     .section1 {
       min-height: 750px;
-      margin-top: -5rem;
+      margin-top: 0rem;
     }
 
     .section1-heading {
@@ -143,7 +146,7 @@ const HomeSection1Styles = styled.div`
 
     .section1-social {
       left: 0;
-      bottom: 33%;
+      bottom: 36%;
       width: 20px;
 
       .section1-social-indicator {
@@ -170,7 +173,7 @@ const HomeSection1Styles = styled.div`
 
     .section1-scrollDown {
       right: 0;
-      bottom: 38%;
+      bottom: 42%;
       width: 20px;
       gap: 1rem;
       p {
@@ -178,6 +181,7 @@ const HomeSection1Styles = styled.div`
       }
     }
   }
+
   @media only screen and (max-width: 375px) {
     .section1-image {
       width: 280px;
@@ -198,10 +202,6 @@ function HomeSection1() {
             <img src={Section1} alt="img-section1" />
           </div>
           <div className="section1-info">
-            {/* <PText>
-              lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </PText>
-            <Button btnText="see my works" btnLink="/projects" /> */}
             <h2 className="section1-subtitle">
               Desarrollador <br />
               Frontend
@@ -216,11 +216,11 @@ function HomeSection1() {
               <ul>
                 <li>
                   <a
-                    href="https://www.instagram.com/iamsebas376/"
+                    href="mailto:londonosebas201.sloa@gmail.com"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    IN
+                    GM
                   </a>
                 </li>
                 <li>

@@ -25,11 +25,13 @@ const AboutPageStyles = styled.div`
     margin-bottom: 2rem;
     span {
       background-color: var(--deep-dark);
+      color: var(--white);
       padding: 0.5rem;
       border-radius: 8px;
     }
   }
   .about-heading {
+    color: var(--white);
     font-size: 3.6rem;
     margin-bottom: 3rem;
   }
@@ -63,6 +65,7 @@ const AboutPageStyles = styled.div`
     margin-bottom: 10rem;
   }
   .about-info-heading {
+    color: var(--white);
     font-size: 3.6rem;
     text-transform: uppercase;
   }
@@ -170,7 +173,7 @@ function About() {
               <h1 className="about-info-heading">Experiencia</h1>
 
               <AboutInfoItem
-                title="2013 - Actualidad"
+                title="2023 - Actualidad"
                 items={["Desarrollador Frontend Junior - Prográmate Academy"]}
               />
             </div>

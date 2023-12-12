@@ -101,15 +101,11 @@ function Footer() {
         </div>
         <div className="footer-col-4">
           <FooterCol
-            heading="Redes sociales"
+            heading="Redes"
             links={[
               {
                 title: "Linkedin",
                 path: "https://www.linkedin.com/in/iamsebas376/",
-              },
-              {
-                title: "Instagram",
-                path: "https://www.instagram.com/iamsebas376/",
               },
               ,
               {

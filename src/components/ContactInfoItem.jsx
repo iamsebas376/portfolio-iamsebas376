@@ -19,16 +19,24 @@ const ContactInfoItemStyles = styled.div`
     border-radius: 50%;
   }
   svg {
-    width: 3.5rem;
+    width: 3rem;
+  }
+
+  .info:hover {
+    .para p {
+      color: var(--white);
+    }
   }
 `;
 
-function ContactInfoItem({ icon, text }) {
+function ContactInfoItem({ icon, text, link }) {
   return (
     <ContactInfoItemStyles>
       <div className="icon">{icon}</div>
       <div className="info">
-        <PText>{text}</PText>
+        <a href={link} target="_blank">
+          <PText>{text}</PText>
+        </a>
       </div>
     </ContactInfoItemStyles>
   );

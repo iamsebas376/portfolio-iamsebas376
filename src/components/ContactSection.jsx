@@ -26,14 +26,22 @@ const ContactStyles = styled.div`
     transform: translate(-50%, -50%);
   }
 
-  .left {
+  .left-container {
     width: 100%;
     max-width: 500px;
   }
 
-  .right {
+  .left-items {
+    margin-top: 14rem;
+  }
+
+  .right-container {
     width: 100%;
     max-width: 500px;
+  }
+
+  .right-items {
+    margin-top: 5rem;
   }
 
   @media only screen and (max-width: 768px) {
@@ -45,12 +53,16 @@ const ContactStyles = styled.div`
       display: none;
     }
 
-    .left,
-    .right {
+    .left-container,
+    .right-container {
       max-width: 100%;
     }
 
-    .right {
+    .left-items {
+      margin-top: 5rem;
+    }
+
+    .right-container {
       padding: 4rem 2rem 2rem 2rem;
     }
   }
@@ -62,16 +74,36 @@ function ContactSection() {
       <div className="container">
         <SectionTitle heading="conmigo" subHeading="Ponte en contacto" />
         <div className="contact-section-wrapper">
-          <div className="left">
-            <ContactInfoItem icon={<MdLocalPhone />} text="+57 310 601 1994" />
-            <ContactInfoItem
-              icon={<MdEmail />}
-              text="londonosebas201.sloa @gmail.com"
-            />
-            <ContactInfoItem icon={<MdPlace />} text="Rionegro, Antioquia " />
+          <div className="left-container">
+            <div className="left-title">
+              <SectionTitle heading="" subHeading="Datos de contacto: " />
+            </div>
+            <div className="left-items">
+              <ContactInfoItem
+                icon={<MdLocalPhone />}
+                text="+57 310 601 1994"
+                link="tel:+573106011994"
+              />
+              <ContactInfoItem
+                icon={<MdEmail />}
+                text="londonosebas201.sloa @gmail.com"
+                link="mailto:londonosebas201.sloa@gmail.com"
+              />
+              <ContactInfoItem
+                icon={<MdPlace />}
+                text="Rionegro, Antioquia "
+                link="https://www.google.com/maps/@6.1448369,-75.374118,14z?entry=ttu"
+              />
+            </div>
           </div>
-          <div className="right">
-            <ContactForm />
+          <div className="right-container">
+            <div className="right-title">
+              <SectionTitle heading="" subHeading="Envíame un mensaje:" />
+            </div>
+
+            <div className="right-items">
+              <ContactForm />
+            </div>
           </div>
         </div>
       </div>

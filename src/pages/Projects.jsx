@@ -30,7 +30,6 @@ const ProjectStyles = styled.div`
   .projects-search-bar .search-icon {
     position: absolute;
     width: 2rem;
-
     right: 1rem;
   }
   .projects-search-bar .search-icon path {

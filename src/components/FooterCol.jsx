@@ -12,6 +12,12 @@ const FooterColStyles = styled.div`
   }
   a {
     font-size: 1.8rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: var(--white);
+      transition: all 0.3s ease;
+    }
   }
 `;
 

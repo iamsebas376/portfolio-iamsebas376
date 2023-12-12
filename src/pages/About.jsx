@@ -48,8 +48,17 @@ const AboutPageStyles = styled.div`
     border-radius: 8px;
     display: inline-block;
     border: 2px solid var(--gray-1);
+    transition: all 0.3s ease-in-out;
+
     a {
       color: black;
+    }
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      background-color: transparent;
+      a {
+        color: var(--gray-1);
+      }
     }
   }
   .right {

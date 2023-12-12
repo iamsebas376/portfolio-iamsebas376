@@ -1,6 +1,7 @@
-import React, { useRef } from "react";
+import React from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
+import PText from "./PText";
 
 const FormStyles = styled.form`
   width: 100%;
@@ -32,7 +33,7 @@ const FormStyles = styled.form`
     resize: vertical;
   }
 
-  button[type="submit"] {
+  .btn {
     background-color: var(--gray-1);
     color: var(--black);
     font-size: 2rem;
@@ -43,6 +44,12 @@ const FormStyles = styled.form`
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
+    border: 2px solid var(--gray-1);
+    &:hover {
+      background-color: transparent;
+      transition: all 0.3s ease;
+      color: var(--gray-1);
+    }
   }
 `;
 
@@ -50,7 +57,6 @@ function ContactForm() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
-
   const form = React.useRef();
 
   const sendEmail = (e) => {
@@ -109,10 +115,14 @@ function ContactForm() {
               name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              maxLength={500}
             />
           </label>
+          <PText>Caracteres restantes: {500 - message.length}</PText>
         </div>
-        <button type="submit">Enviar</button>
+        <button className="btn" type="submit">
+          Enviar
+        </button>
       </FormStyles>
     </div>
   );

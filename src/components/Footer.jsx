@@ -94,7 +94,7 @@ function Footer() {
               { title: "Gmail", path: "mailto:londonosebas201.sloa@gmail.com" },
               {
                 title: "Ubicación",
-                path: "https://www.google.com/maps/place/El+Carmen+de+Viboral,+Antioquia/@6.0832668,-75.3467308,14.75z/data=!4m6!3m5!1s0x8e46a27be2436be3:0xf089e7d7aaeb49b0!8m2!3d6.083056!4d-75.335278!16zL20vMDdodmp0?hl=es&entry=ttu",
+                path: "https://www.google.com/maps/@6.1448369,-75.374118,14z?entry=ttu",
               },
             ]}
           />

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 
 const FormStyles = styled.form`
@@ -50,15 +51,40 @@ function ContactForm() {
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
 
+  const form = React.useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_rx5rmnp",
+        "template_3edej38",
+        form.current,
+        "orkbs0ghwa9EbWcDc"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setName("");
+          setEmail("");
+          setMessage("");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div>
-      <FormStyles>
+      <FormStyles ref={form} onSubmit={sendEmail}>
         <div className="form-group">
           <label htmlFor="name">
             Tu nombre:
             <input
               type="text"
-              id="name"
+              name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
@@ -69,7 +95,7 @@ function ContactForm() {
             Tu correo:
             <input
               type="text"
-              id="email"
+              name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -80,7 +106,7 @@ function ContactForm() {
             Tu mensaje:
             <textarea
               type="text"
-              id="message"
+              name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />

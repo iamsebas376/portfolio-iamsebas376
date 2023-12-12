@@ -41,7 +41,7 @@ const projects = [
     },
     {
         id: uuidv4(),
-        title: 'Página tributo The Witcher',
+        title: 'Tributo The Witcher',
         desc:
             'Página web tributo a The Witcher 3. La página ofrece información detallada sobre la historia, personajes y el mundo del juego.',
         link: 'https://iamsebas376.github.io/pagina-tributo-the-witcher-3/',

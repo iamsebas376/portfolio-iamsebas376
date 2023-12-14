@@ -78,11 +78,12 @@ function Footer() {
         <div className="footer-col-2">
           <FooterCol
             heading="Links"
+            type="links"
             links={[
-              { type: "Links", title: "Inicio", path: "/inicio" },
-              { type: "Links", title: "Sobre mi", path: "/sobre-mi" },
-              { type: "Links", title: "Proyectos", path: "/proyectos" },
-              { type: "Links", title: "Contacto", path: "/contacto" },
+              { type: "links", title: "Inicio", path: "/" },
+              { type: "links", title: "Sobre mi", path: "/sobre-mi" },
+              { type: "links", title: "Proyectos", path: "/proyectos" },
+              { type: "links", title: "Contacto", path: "/contacto" },
             ]}
           />
         </div>

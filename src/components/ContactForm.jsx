@@ -62,24 +62,22 @@ function ContactForm() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_rx5rmnp",
-        "template_3edej38",
-        form.current,
-        "orkbs0ghwa9EbWcDc"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
+    if (name && email && message) {
+      emailjs
+        .sendForm(
+          "service_rx5rmnp",
+          "template_3edej38",
+          form.current,
+          "orkbs0ghwa9EbWcDc"
+        )
+        .then(() => {
           setName("");
           setEmail("");
           setMessage("");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+        });
+    } else {
+      alert("Diligencia todos los campos antes de enviar");
+    }
   };
 
   return (
@@ -100,7 +98,7 @@ function ContactForm() {
           <label htmlFor="email">
             Tu correo:
             <input
-              type="text"
+              type="email"
               name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
